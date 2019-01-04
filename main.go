@@ -1,13 +1,13 @@
 package main
 
 import (
-	"github.com/richardwilkes/toolbox/atexit"
-	"github.com/richardwilkes/toolbox/cmdline"
-	"github.com/richardwilkes/toolbox/log/jot"
-	"github.com/richardwilkes/toolbox/log/jotrotate"
-	"github.com/richardwilkes/webapp"
-	"github.com/richardwilkes/webapp/driver"
-	"github.com/richardwilkes/webapp/stdmenu"
+	"github.com/jholder85638/toolbox/atexit"
+	"github.com/jholder85638/toolbox/cmdline"
+	"github.com/jholder85638/toolbox/log/jot"
+	"github.com/jholder85638/toolbox/log/jotrotate"
+	"github.com/jholder85638/webapp"
+	"github.com/jholder85638/webapp/driver"
+	"github.com/jholder85638/webapp/stdmenu"
 )
 
 func main() {

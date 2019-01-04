@@ -35,7 +35,7 @@ if [ -z $BUILD_NUMBER ]; then
 fi
 
 # Setup CEF
-go install -v github.com/richardwilkes/cef
+go install -v github.com/jholder85638/cef
 cef install
 
 # Prepare platform-specific distribution bundle
@@ -62,5 +62,5 @@ case $OS_TYPE in
 esac
 
 go build -o "$TARGET_EXE" -v \
-    -ldflags=all="-X github.com/richardwilkes/toolbox/cmdline.AppVersion=$APP_VERSION_SHORT -X github.com/richardwilkes/toolbox/cmdline.GitVersion=$GIT_VERSION -X github.com/richardwilkes/toolbox/cmdline.BuildNumber=$BUILD_NUMBER" \
+    -ldflags=all="-X github.com/jholder85638/toolbox/cmdline.AppVersion=$APP_VERSION_SHORT -X github.com/jholder85638/toolbox/cmdline.GitVersion=$GIT_VERSION -X github.com/jholder85638/toolbox/cmdline.BuildNumber=$BUILD_NUMBER" \
     ./main.go
